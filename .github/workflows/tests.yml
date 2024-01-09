@@ -17,9 +17,8 @@ jobs:
         with:
           node-version: 18
       - run: cd example && npm install
-      - run: cd example && npm run build
       - name: Run tests
-        run: xvfb-run --auto-servernum npm run ci
+        run: npx cypress run -b chrome
         working-directory: ./example
         env:
           API_KEY: ${{ secrets.AXE_DEV_HUB_API_KEY }}
