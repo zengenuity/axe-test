@@ -1,0 +1,4 @@
+example/node_modules
+example/cypress/screenshots
+example/cypress/downloads
+example/cypress/axe-watcher
