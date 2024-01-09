@@ -16,7 +16,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: cd example && npm install --dev
+      - run: cd example && npm install
+      - run: cd example && npm install --save-dev @axe-core/watcher
       - name: Run tests
         run: npx cypress run -b chrome
         working-directory: ./example
