@@ -4,5 +4,6 @@ describe('Accessibility Test', () => {
     cy.axeAnalyze()
     cy.visit('https://www.gurneysresorts.com/montauk')
     cy.axeAnalyze()
+
   })
 })
