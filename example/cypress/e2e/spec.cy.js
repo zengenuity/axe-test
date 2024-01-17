@@ -1,8 +1,8 @@
-describe('My First Test', () => {
+describe('Accessibility Test', () => {
   it('Visits home page', () => {
     cy.visit('https://www.gurneysresorts.com')
-    //cy.axeAnalyze()
+    cy.axeAnalyze()
     cy.visit('https://www.gurneysresorts.com/montauk')
-    //cy.axeAnalyze()
+    cy.axeAnalyze()
   })
 })
