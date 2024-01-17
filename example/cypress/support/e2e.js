@@ -17,7 +17,7 @@
 import './commands'
 require('@axe-core/watcher/dist/cypressCommands');
 afterEach(() => {
-    //cy.axeFlush();
+    cy.axeFlush()
 });
 
 // Alternatively you can use CommonJS syntax:

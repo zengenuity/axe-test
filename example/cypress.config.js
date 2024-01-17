@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 const { cypressConfig } = require('@axe-core/watcher');
 
 module.exports = defineConfig(cypressConfig({
+  defaultCommandTimeout: 30000,
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
