@@ -33,3 +33,4 @@ jobs:
         with:
           api_key: ${{ secrets.AXE_DEV_HUB_API_KEY }}
           github_token: ${{ secrets.TOKEN_GITHUB }}
+          enable_a11y_threshold: true
