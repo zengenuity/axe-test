@@ -32,4 +32,5 @@ jobs:
       - uses: dequelabs/axe-devhub-action@v1
         with:
           api_key: ${{ secrets.AXE_DEV_HUB_API_KEY }}
+          enable_a11y_threshold: true
           github_token: ${{ secrets.TOKEN_GITHUB }}
