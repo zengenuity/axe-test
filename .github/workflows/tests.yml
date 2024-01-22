@@ -29,7 +29,8 @@ jobs:
     needs: cypress
     steps:
       - uses: actions/checkout@v3
-      - uses: dequelabs/axe-devhub-action@v1
+      - uses: dequelabs/axe-devhub-action@main
         with:
           api_key: ${{ secrets.AXE_DEV_HUB_API_KEY }}
+          enable_a11y_threshold: true
           github_token: ${{ secrets.TOKEN_GITHUB }}
